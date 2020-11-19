@@ -1,0 +1,40 @@
+Project Title = 99 Art Coffee
+
+Project Flow
+===========
+  - item management
+  - user management
+  - order management
+
+CRUD
+====
+  - php artisan make:model Category -m -r
+  - create resource route (web.php)
+  - create resource view folder (resources/views/)
+  
+Database Structure
+==================
+  - item (13-11-2020)
+    1- categories (name, photo)
+    2- subcategories (name, category_id)
+    3- items (codeno, brand_id, subcategory_id, name, photo, price, discount, description)
+    4- orders (order_no, order_date, totalamount, notes, status, user_id)
+    5- books (name, phone, table_no, date, time, people, message)
+
+  - Authentication
+    -install laravel/ui package
+    -bootstrap --auth
+    -npm install
+    -npm rum dev
+    -localhost:8000/login
+
+  - Roles
+    - spatie/laravel-permission package
+
+  - user
+    - roles
+    - users
+
+  - order
+    - orders(id, orderno, total, customer_info, note)
+    - orderdetails(id, order_info, item_info, qty)
