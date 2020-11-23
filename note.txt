@@ -38,3 +38,7 @@ Database Structure
   - order
     - orders(id, orderno, total, customer_info, note)
     - orderdetails(id, order_info, item_info, qty)
+
+Ma Yin Min Ei / Email: yinminei@myanmaritc.com 
+Phone: 09772750504 
+09777047820 
