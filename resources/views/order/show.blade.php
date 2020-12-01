@@ -73,14 +73,14 @@
                                     <span class="text-dark font-weight-bold">
                                       @php
                                       $subTotal = 0;
-                                        if($item->discount != 0 || $item->discount != '')
+                                        if($item->discount == 0)
                                         {
-                                            $subTotal += $item->discount * $item->pivot->quantity;
+                                            $subTotal = $item->price * $item->pivot->quantity;
                                         }
                                         else {
-                                            $subTotal += $item->price * $item->pivot->quantity;
+                                            $subTotal = $item->discount * $item->pivot->quantity;
                                         }$total += $subTotal;
-                                      echo $subTotal;
+                                      echo $total;
                                       @endphp MMK</span>
                                 </div>
                             </td>
